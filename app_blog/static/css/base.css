@@ -1,0 +1,31 @@
+body{
+    background-color: rgb(150, 230, 236);
+    margin: 10px;
+    text-align:center;
+}
+.hola{
+    border: 40rem;
+}
+
+.button{
+    width: 50%;
+    background-color: yellowgreen;
+}
+.card{
+    background-color: rgb(150, 209, 236);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    width: 500px;
+    margin: auto;
+    text-align: center;
+    
+}
+.container{
+    padding: 2px 16px;
+    text-align: center;
+    
+}
+.foto{
+    border-radius: 508888px;
+}

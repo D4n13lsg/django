@@ -1,0 +1,31 @@
+.login{
+    margin: 90px;
+    
+}
+.card{
+    margin: 80px;
+    
+}
+.new{
+    margin: 60px;
+}
+.signup{
+    margin: 50px;
+}
+.inicio{
+    text-align: center;
+}
+body{
+    background-color: rgb(156, 163, 165);
+    
+}
+
+header{
+    background-color: rgb(166, 230, 208);
+}
+.container{
+    margin-top: 10rem;
+}
+.error{
+    text-align: center;
+}

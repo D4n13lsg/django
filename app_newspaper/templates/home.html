@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Home{% endblock title %}
+{% block content %}
+<div class="container">
+    {% if user.is_authenticated %}
+    <img src="{% static 'img/lot.png'%}" alt="" width="330px"></br>
+        Hi {{ user.username }}! You are {{ user.age }} years old.
+        <p><a href="{% url 'logout' %}" class="btn btn-outline-primary">Log Out</a></p>
+    {% else %}
+        <img src="{% static 'img/lot.png'%}" alt="" width="330px">
+        <p>Quieres ingresar a esta pagina mas pro del mundo? </p>
+        <a href="{% url 'login' %}"class="btn btn-outline-primary me-2">Log In</a>
+        <a href="{% url 'signup' %}"class="btn btn-outline-primary me-2">Sing Up</a>
+    {% endif %}
+</div>
+{% endblock content %}
