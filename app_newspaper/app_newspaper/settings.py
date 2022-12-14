@@ -29,6 +29,11 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+LOGIN_URL = 'login'
+LOGOUT_REDIRECT_URL = 'login'
+
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
 
 # Application definition
 
@@ -138,12 +143,12 @@ LOGIN_REDIRECT_URL = "home"
 LOGOUT_REDIRECT_URL = "home"
 CRISPY_ALLOWED_TEMPLATE_PACK = "bootstrap5"
 CRISPY_TEMPLATE_PACK = "bootstrap5"
-EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
 
-#restablecer contraseña
-EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
-EMAIL_HOST = "smtp.gmail.com"
-EMAIL_USE_TLS = True
-EMAIL_PORT = 587
-EMAIL_HOST_USER = "danielfelipesachez23@gmail.com"
-EMAIL_HOST_PASSWORD = "camilo1808"
+
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = '587'
+EMAIL_USE_TLS = 'True'
+EMAIL_HOST_USER = 'restriccion03@gmail.com'
+EMAIL_HOST_PASSWORD = 'rezpxakzwuhieejc'

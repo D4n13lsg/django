@@ -18,6 +18,7 @@ from django.urls import path, include
 from django.views.generic.base import TemplateView
 from django.conf.urls import handler403
 from articles.views import Error403View
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('accounts/', include('accounts.urls')),
